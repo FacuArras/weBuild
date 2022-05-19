@@ -1,4 +1,96 @@
-$primary: rgb(81, 1, 105);
-$secondary: rgb(0, 77, 77);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/* variables starts */
+$yellow: #f5bf23;
+$black: #111;
+$light-color: #666;
+$light-bg: #eee;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$border: 0.1rem solid rgba(0, 0, 0, 0.3);
+/* variables ends */
+
+/* bootstrap modifiers starts */
+$primary: $yellow;
+$secondary: $light-bg;
+$border-color: $border;
+/* bootstrap modifiers ends */
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+  color: $black !important;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $yellow;
+  }
+}
+
+/* components modifier starts */
+.hover {
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.hover-bg {
+  &:hover {
+    background-color: $yellow !important;
+  }
+}
+
+.hover-dark {
+  &:hover {
+    cursor: pointer;
+    background-color: $black !important;
+    color: white !important;
+  }
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+/* components modifier ends */
+
+/* header section starts */
+header {
+  box-shadow: $box-shadow;
+}
+/* header section ends */
+
+/* home section starts */
+#slideImage {
+  min-height: 30rem !important;
+  max-height: 45rem !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+#home__tiltles {
+  max-width: 30rem;
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+}
+/* home section ends */
 
 @import "../node_modules/bootstrap/scss/bootstrap";
