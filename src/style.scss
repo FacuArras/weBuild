@@ -126,13 +126,24 @@ header {
     img {
       object-fit: cover;
     }
-    &:hover{
-      img{
+    &:hover {
+      img {
         transform: scale(1.1);
       }
     }
   }
 }
 /* projects section ends */
+
+/* pricing section starts */
+#pricing {
+  .card {
+    box-shadow: $box-shadow;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+/* pricing section ends */
 
 @import "../node_modules/bootstrap/scss/bootstrap";
