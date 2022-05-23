@@ -41,6 +41,10 @@ html {
 }
 
 /* components modifier starts */
+.swiper-pagination-bullet-active{
+  background: $primary !important;
+}
+
 .hover {
   &:hover {
     color: $primary !important;
@@ -176,17 +180,28 @@ header {
     @media (min-width: 768px) {
       border-radius: 10px 0 0 10px;
     }
-    @media (min-width: 1400px) {
-      border-radius: 10px;
-    }
   }
 
   .contact-form {
     @media (min-width: 768px) {
-      border-radius: 5px 10px 10px 5px;
+      border-radius: 10px;
     }
   }
 }
 /* contact section ends */
+
+/* blogs section starts */
+#blogs {
+  .image {
+    width: 90%;
+    overflow: hidden;
+    margin-bottom: -2rem;
+    image {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+/* blogs section ends */
 
 @import "../node_modules/bootstrap/scss/bootstrap";
