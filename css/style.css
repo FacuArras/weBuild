@@ -137,6 +137,49 @@ header {
 }
 
 /* pricing section ends */
+/* reviews section starts */
+#reviews .slide p::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: #eee;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#reviews .slide img {
+  width: 7rem;
+  height: 7rem;
+}
+
+/* reviews section ends */
+/* contact section starts */
+#contact iframe {
+  border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 768px) {
+  #contact iframe {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #contact iframe {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-form {
+    border-radius: 5px 10px 10px 5px;
+  }
+}
+
+/* contact section ends */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
