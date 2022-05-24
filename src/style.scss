@@ -13,6 +13,10 @@ $border: 0.1rem solid rgba(0, 0, 0, 0.3);
 $primary: $yellow;
 $secondary: $light-bg;
 $border-color: $border;
+$btn-border-radius: 0;
+.lg-icon{
+  color: white !important;
+}
 /* bootstrap modifiers ends */
 
 * {
@@ -55,6 +59,7 @@ html {
   &:hover {
     background-color: $yellow !important;
     color: black !important;
+    border-color: $yellow !important;
   }
 }
 
@@ -94,7 +99,7 @@ header {
   object-position: center;
 }
 
-#home__tiltles {
+#home__titles {
   max-width: 30rem;
   @media (max-width: 576px) {
     h1 {

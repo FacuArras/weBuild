@@ -42,6 +42,7 @@ var swiper = new Swiper(".footer-slider", {
   pagination: {
     el: ".swiper-pagination",
   },
+  centeredSlides: true,
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
